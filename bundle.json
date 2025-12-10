@@ -1,0 +1,36 @@
+{
+  "name": "@ohos/rust_atty",
+  "description": "A library for parsing command-line arguments in Rust",
+  "version": "6.1",
+  "license": "MIT License",
+  "publishAs": "code-segment",
+  "segment": {
+    "destPath": "third_party/rust/crates/atty"
+  },
+  "dirs": {},
+  "scripts": {},
+  "readmePath": {
+    "en": "README.md"
+  },
+  "component": {
+    "name": "rust_atty",
+    "subsystem": "thirdparty",
+    "adapted_system_type": [
+      "standard"
+    ],
+    "deps": {
+      "components": [
+        "rust_libc"
+      ]
+    },
+    "build": {
+      "sub_component": [],
+      "inner_kits": [
+        {
+          "name": "//third_party/rust/crates/atty:lib"
+        }
+      ],
+      "test": []
+    }
+  }
+}
